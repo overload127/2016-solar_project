@@ -18,7 +18,7 @@ def calculate_force(body, space_objects):
     for obj in space_objects:
         if body == obj:
             continue  # тело не действует гравитационной силой на само себя!
-        
+
         # первый вариант
         vector_x = obj.x - body.x
         vector_y = obj.y - body.y
